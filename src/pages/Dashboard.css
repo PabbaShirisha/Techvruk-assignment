@@ -1,0 +1,35 @@
+.dashboard-container{
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.dashboard-layout{
+  display: flex;
+  gap: 20px;
+  width: 100%;
+}
+
+/* viewer */
+.viewer-section{
+  flex: 3;
+}
+
+/* sidebar */
+.sidebar-section{
+  flex: 1;
+}
+
+/* Tablet & Mobile */
+@media (max-width: 768px){
+
+  .dashboard-layout{
+    flex-direction: column;
+  }
+
+  .viewer-section,
+  .sidebar-section{
+    width: 100%;
+  }
+
+}
